@@ -55,6 +55,40 @@
 </html>
 ```
 
+* You can create a navigation bar by making an un ordered list with list items that link other html page
+
+```html
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://deloitte.com/" target="_blank">Deloitte</a></li>
+            <!-- target = blank will open link in new tab which is best practice for links that navigate away from your page :) -->
+        </ul>
+    </div>
+    <!-- can use shortcut div>ul>ul>li*3 -->
+```
+
+### Key tags
+
+* button - adds a button
+
+``` html
+<button id="button">PRESS ME</button> 
+```
+
+* image - adds an image
+
+``` html
+<img src="https://petapixel.com/assets/uploads/2022/07/DALLEcopy-800x420.jpg" alt="giant pineapple with front door resting on the surface of the sea">
+```
+
+* script - links to JS code
+
+```html
+    <script src="index.js"></script>
+```
+
 ### Shortcut
 
 * Crtl / is key for comments
@@ -116,5 +150,83 @@ body {
 }
 h1 {
     color: white;
+}
+```
+
+* seperate style into sections of the page working from top to bottom
+
+```css
+/* navigation style below */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* ul,li, a */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: black;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    text-align: center;
+    padding: 15px 17px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li a:hover{
+    background-color: #86BC25;
+}
+/* End of navigation style */
+
+h1 {
+    /* padding: 300px; top, right, bottom and left 300px */
+    /* padding: 150px 200px; top and bottom 150px, right and left 200px */
+    /* padding: 100px 150px 200px; top is 100px, right amd left are 150px, bottom is 200px */
+    /* padding: 50px 100px 150px 200px; top is 50px, right is 100px, bottom is 150px, left is 200px*/
+    /* padding numbers work clockwise starting at top of webpage */
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    margin: 0.5% 90% 0.5% 0.5%;
+}
+
+img {
+    width: 800px;
+    height: 400px;
+}
+
+/* footer {
+
+} */
+
+/* Responsive CSS */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    img {
+        width: 100%;
+        height: 50%;
+    }
 }
 ```
