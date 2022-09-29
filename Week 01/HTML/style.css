@@ -43,7 +43,8 @@ h1 {
 }
 
 button {
-    margin: 0.5% 90% 0.5% 0.5%;
+    display: block;
+    /* puts buttons on their own lines */
 }
 
 img {
