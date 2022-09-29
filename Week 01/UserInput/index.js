@@ -6,7 +6,7 @@ if (userInput == "I am good") {
 
     userInput = prompt("Who do you work for?")
 
-    if (userInput == "Deloitte") {
+    if (userInput == "Deloitte" || userInput == "deloitte") {
         deloitteEmployee();
     } else if ((userInput == "Firebrand")) {
         firebrandEmployee();
@@ -23,5 +23,7 @@ function deloitteEmployee() {
 
 function firebrandEmployee() {
     console.log("Ahh, you're an Instructor");
+    userInput = prompt("Who are you teaching?")
+    console.log(userInput);
 }
 
