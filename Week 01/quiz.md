@@ -4,7 +4,7 @@
 
 * How do we decide if a number is odd or even?
   
-```ts 
+```ts
 let number: number = 2;
 
 if (number % 2 == 0) {
@@ -30,4 +30,3 @@ print(5 / 0)
   * infinity (which can be positive or negative based on the sign of the x when x / 0)
   * ZeroDivisionError
   * NaN which means not a number
-
