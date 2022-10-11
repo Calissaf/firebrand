@@ -13,3 +13,11 @@
 ## TDD (Test Driven Developement)
 
 * Application that has code created driven by the tests we write
+
+## Testing processes
+
+* Setup process:
+  * We as testers, set up the environment needed for our tests
+
+* Teardown processs:
+  * We reset the environment needed for future tests
